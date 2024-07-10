@@ -1,0 +1,39 @@
+/* src/app/time-schedule/time-schedule.component.css */
+:host {
+  display: block;
+  width: 100%;
+  height: 100vh; /* Full height of the viewport */
+  background: url('/assets/Background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Additional styling to make the content readable over the background image */
+div {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}

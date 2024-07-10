@@ -1,0 +1,27 @@
+<!-- time-schedule.component.html -->
+<!-- src/app/time-schedule/time-schedule.component.html -->
+<div>
+  <h2>Time Schedule</h2>
+  <input type="text" [(ngModel)]="currentUserId" placeholder="Enter User ID" />
+  <button (click)="login()">Login</button>
+  <button (click)="logout()">Logout</button>
+
+  <h3>User Sessions</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Login Time</th>
+        <th>Logout Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let session of userSessions">
+        <td>{{ session.userId }}</td>
+        <td>{{ session.loginTime | date:'short' }}</td>
+        <td>{{ session.logoutTime ? (session.logoutTime | date:'short') : 'Active' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
